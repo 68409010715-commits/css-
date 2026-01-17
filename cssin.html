@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ตัวอย่างเชื่อม 3 CSSภายใน</title>
+
+    <style>
+        /*ส่วนที่ 1: ใช้ฟอนต์กำหนดฟอนต์ */
+        body {
+            font-family: "Courier New", Courier, monospace; 
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2, p {
+            margin-bottom: 15px;
+        }
+
+        /*ส่วนที่ 2: กรอบสี่เหลี่ยม */
+        .container {
+            width: 800px;           /* บังคับความกว้างตายตัว */
+            margin: 0 auto;         /* จัดกลาง */
+            border: 5px solid black;/* เส้นขอบหนาเตอะ */
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        .content-box {
+            border: 2px dashed black; /* เส้นประแบบบ้านๆ */
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        /*ส่วนที่ 3: กำหนดสี*/
+        body {
+            background-color: #ffff00; /* สีเหลืองแม่สีแสบตา */
+        }
+
+        .container {
+            background-color: #ffffff; /* พื้นหลังเนื้อหาเป็นสีขาว */
+        }
+
+        h1 {
+            background-color: #ff0000; /* พื้นหลังแดง */
+            color: #ffffff;            /* ตัวหนังสือขาว */
+            text-align: center;
+            padding: 10px;
+            border-bottom: 5px solid #0000ff; /* ขอบล่างสีน้ำเงิน */
+        }
+
+        h2 {
+            color: #0000ff; /* หัวข้อรองสีน้ำเงินสด */
+            text-decoration: underline;
+        }
+
+        /* ปุ่มกดแบบโบราณ */
+        .btn-baanbaan {
+            background-color: #00ff00; /* เขียวสะท้อนแสง */
+            color: black;
+            border: 3px solid black;   /* ขอบปุ่มดำหนา */
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            font-family: "Courier New", monospace;
+        }
+
+        .btn-baanbaan:hover {
+            background-color: black;
+            color: white;
+            /* ไม่มี Effect นุ่มนวล เปลี่ยนปุ๊บปั๊บเลย */
+        }
+        
+        /* ลิงก์แบบดั้งเดิม */
+        a {
+            color: blue;
+        }
+        a:visited {
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>ประกาศด่วนจี๋!!</h1>
+        
+        <p style="text-align: center; font-weight: bold; font-size: 20px;">
+            ยินดีต้อนรับเข้าสู่ระบบเช็คเด็กบ้านด่าน
+        </p>
+
+        <div class="content-box">
+            <h2>เรื่องที่ 1: เจอเด็กมองหน้าทำยังไง</h2>
+            <p>เด็กข้างเซเว่นข้างมัสยิดมองเราแปลกๆ</p>
+            <ul>
+                <li>สวัสดี</li>
+                <li>เดินไปต่อย</li>
+                <li>ให้ของ</li>
+            </ul>
+        </div>
+
+        <div class="content-box">
+            <h2>เรื่องที่ 2: เจอพ่อลงจากรถ</h2>
+            <p>คุณที่น่ารักเดินมาเต็มยศ</p>
+            <br>
+            <center>
+                <button class="btn-baanbaan">คลิกเพื่อดูว่าควรทำยังไง</button>
+            </center>
+        </div>
+
+        <p>ติดต่อแอดมิน: <a href="#">By.com</a></p>
+    </div>
+
+</body>
+</html>
